@@ -1,0 +1,8 @@
+requests
+jsonlib
+pytz
+aiohttp
+aiofiles
+httpx
+playwright
+tzdata
