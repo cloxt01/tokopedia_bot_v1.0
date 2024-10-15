@@ -1,0 +1,15 @@
+         523279 function calls (509750 primitive calls) in 12.077 seconds
+
+   Ordered by: cumulative time
+   List reduced from 791 to 7 due to restriction <'main.py'>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      148    0.001    0.000    0.626    0.004 main.py:182(handle_request)
+       10    0.000    0.000    0.046    0.005 main.py:480(main)
+       73    0.000    0.000    0.002    0.000 main.py:162(handle_response)
+        1    0.000    0.000    0.000    0.000 main.py:258(ssh_setup)
+        3    0.000    0.000    0.000    0.000 main.py:26(times)
+        1    0.000    0.000    0.000    0.000 main.py:247(is_port_in_use)
+        1    0.000    0.000    0.000    0.000 main.py:238(selector_validation)
+
+

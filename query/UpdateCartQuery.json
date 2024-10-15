@@ -1,0 +1,36 @@
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580216510,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": true,
+    "source": "update_qty_notes",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]

@@ -1,0 +1,3117 @@
+2024-09-30 20:59:06 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8568525623,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 14491944942
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 26,
+     "sp_id": 50,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 20:59:06 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8568525623,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 14491944942
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 26,
+     "sp_id": 50,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 21:35:42 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8568525623,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 14491944942
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 26,
+     "sp_id": 50,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 21:35:42 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8568525623,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 14491944942
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 26,
+     "sp_id": 50,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 21:58:21 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8568525623,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 14491944942
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 26,
+     "sp_id": 50,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 21:58:21 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8568525623,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 14491944942
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 26,
+     "sp_id": 50,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 22:14:16 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8569026699,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": true,
+    "source": "update_qty_notes",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 22:15:23 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8569026699,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 22:15:23 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8569026699,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 22:32:29 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8569026699,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 22:32:29 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8569026699,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 22:37:17 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8569026699,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-09-30 22:37:17 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8569026699,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 08:47:08 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8571766262,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 08:47:08 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8571766262,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 09:13:49 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572020799,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 09:13:49 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572020799,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 09:16:09 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572020799,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 09:16:09 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572020799,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:11:55 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572020799,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:11:55 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572020799,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 759683250
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:13:07 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:13:07 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:29:52 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:29:52 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:32:04 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:32:04 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:41:44 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:41:44 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:45:35 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 10:45:35 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 10:51:59 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 10:51:59 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 11:04:36 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 11:04:36 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8572621728,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12771755127
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 11:19:23 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573300136,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 3689882090
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 12,
+     "sp_id": 25,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 11:19:23 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573300136,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 3689882090
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 12,
+     "sp_id": 25,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 11:25:16 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573300136,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 3689882090
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 12,
+     "sp_id": 25,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 11:25:16 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573300136,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 3689882090
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 12,
+     "sp_id": 25,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 11:29:16 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573399132,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 1988183325
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 11:29:16 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573399132,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 1988183325
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 29,
+     "sp_id": 61,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 11:48:00 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573576818,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 11:48:00 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573576818,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 11:56:32 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573576818,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 11:56:32 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573576818,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 12:51:48 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 12:51:48 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 13:22:52 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 13:22:52 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 13:52:23 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 13:52:23 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 13:54:10 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 13:54:10 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 13:55:19 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 13:55:19 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 14:49:27 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 14:49:27 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8573903037,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 2986996082
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 18:41:38 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 18:41:38 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 18:46:49 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 18:46:49 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 18:49:29 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 18:49:29 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 19:16:33 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 19:16:33 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 19:26:11 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 19:26:11 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 20:42:49 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 20:42:49 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 21:07:02 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 21:07:02 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8575654334,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 12107387610
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 23:06:43 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 23:06:43 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 23:08:51 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 23:08:51 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 23:16:47 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 23:16:47 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 23:21:44 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 23:21:44 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580062788,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 8419009745
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "BCAVA",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"BCAVA\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/sprites/bca.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 11,
+     "sp_id": 18,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 23:24:40 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580216510,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 23:24:40 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580216510,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 23:31:18 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580216510,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 23:31:18 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580216510,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
+2024-10-01 23:32:46 > Original Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580216510,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]2024-10-01 23:32:46 > Modified Payload
+[
+ {
+  "operationName": "update_cart_occ_multi",
+  "variables": {
+   "param": {
+    "cart": [
+     {
+      "cart_id": 8580216510,
+      "quantity": 1,
+      "notes": "",
+      "product_id": 11798860021
+     }
+    ],
+    "profile": {
+     "address_id": "145894693",
+     "gateway_code": "ALFAMART",
+     "metadata": "{\"success\":true,\"message\":\"\",\"gateway_code\":\"ALFAMART\",\"express_checkout_param\":{\"account_name\":\"\",\"account_number\":\"\",\"bank_id\":\"\",\"pan\":\"\",\"issuer\":\"\",\"card_token\":\"\",\"card_type\":\"\",\"total_saved_card\":\"\",\"installment_term\":\"0\",\"expiry\":\"\",\"bank_code\":\"\",\"pocket_id\":\"\",\"cc_number\":\"\"},\"express_checkout_url\":\"\",\"high_risk_flag\":\"\",\"description\":\"\",\"image\":\"https://images.tokopedia.net/img/toppay/payment-logo/alfamart.png\",\"signature\":\"\",\"customer_name\":\"\",\"customer_email\":\"\",\"user_id\":96724138}",
+     "service_id": 1004,
+     "shipping_id": 14,
+     "sp_id": 27,
+     "is_free_shipping_selected": false
+    },
+    "skip_shipping_validation": false,
+    "source": "",
+    "chosen_address": {
+     "mode": 1,
+     "address_id": "145894693",
+     "district_id": 1530,
+     "postal_code": "42381",
+     "geolocation": "-6.330956,106.396227"
+    }
+   }
+  },
+  "query": "mutation update_cart_occ_multi($param: OneClickCheckoutMultiUpdateCartParam) {\n  update_cart_occ_multi(param: $param) {\n    error_message\n    status\n    data {\n      messages\n      success\n      prompt {\n        type\n        title\n        description\n        image_url\n        buttons {\n          text\n          link\n          action\n          color\n          __typename\n        }\n        __typename\n      }\n      toaster_action {\n        text\n        show_cta\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+ }
+]
