@@ -72,6 +72,18 @@ Untuk menginstal dan menjalankan `tokopedia_bot_v1.0`, ikuti langkah-langkah ber
 
 `main.py` adalah skrip utama yang digunakan untuk memulai program.
 
+## Konfigurasi Profiles
+
+Untuk menjalankan program ini, dibutuhkan profile firefox yang sudah terdapat cookies ***tokopedia.com*** didalamnya.
+Jika kamu kesulitan untuk menemukan profilenya, ikuti langkah-langkah berikut :
+
+1. **Unduh Firefox Browser** : Pastikan kamu sudah mengunduh firefox, dan jika belum kamu bisa mengunduhnya disini : [Firefox Latest Version](https://www.mozilla.org/firefox/download/thanks/)
+2. **Buka Firefox** : Setelah mengunduh firefox, buka firefox yang sebelumnya sudah kamu install.
+3. **Cari Profile** : Di bagian bilah alamat, ketikan `about:profiles`.
+4. **Pilih Profile** : Pilihlah profile yang sudah terdapat cookies ***tokopedia.com*** atau coba login terlebih dahulu di [https://tokopedia.com/login](https://accounts.tokopedia.com/login)
+5. **Buka Folder Profile (Root)** : Selanjutnya, buka folder profile dengan cara mengklik `Buka Folder` yang nantinya kamu akan dialihkan ke letak lokasi folder berada.
+6. **Salin Folder** : Lalu, Salin Folder dan Tempel ke Folder `Profiles` program ini.
+
 ## Output
 ![Expected Results](https://drive.google.com/uc?export=view&id=1E8tTBcPxPaWs0FRbQMT66qjdFa414e-b)
 
