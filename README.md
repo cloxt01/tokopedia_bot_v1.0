@@ -60,6 +60,14 @@ Untuk menginstal dan menjalankan `tokopedia_bot_v1.0`, ikuti langkah-langkah ber
   env\Scripts\activate
   ```
 
+## Konfigurasi File
+
+`Profiles/(user_data_dir)/AddressProfile.json` adalah file untuk mengatur alamat pengguna yang sebelumnya sudah tersimpan di server.
+`get_cookie.py` adalah skrip untuk mendapatkan cookie dari account yang akan digunakan.
+`get_product.py` adalah skrip untuk memperbarui keranjang dari ***one_click_checkout***.
+`get_cookies_occ.py` adalah untuk memperbarui cookie yang nantinya akan digunakan di permintaan checkout.
+`main.py` adalah skrip utama yang digunakan untuk memulai program.
+
 ## Output
 ![Expected Results](https://drive.google.com/uc?export=view&id=1E8tTBcPxPaWs0FRbQMT66qjdFa414e-b)
 
