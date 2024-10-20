@@ -30,6 +30,35 @@ Untuk menginstal dan menjalankan `tokopedia_bot_v1.0`, ikuti langkah-langkah ber
     pip install -r requirements.txt
     ```
 
+4. Install paket lainnya dengan memasukan perintah:
+
+   ```bash
+   sudo apt update
+   sudo apt install -y python3 python3-pip
+   ```
+
+5. Install Browser Playwright:
+   
+  ```bash
+  playwright install
+  ```
+
+6. Buat Virtual Environment (Recomended):
+
+  ```bash
+  python -m venv env
+  ```
+  
+  ### Linux/macOS:
+  
+  ```bash
+  source env/bin/activate
+  ```
+  ### Windows:
+  
+  ```bash
+  env\Scripts\activate
+  ```
 
 ## Output
 ![Expected Results](https://drive.google.com/uc?export=view&id=1E8tTBcPxPaWs0FRbQMT66qjdFa414e-b)
