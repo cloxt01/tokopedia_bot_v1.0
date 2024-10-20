@@ -1,6 +1,14 @@
 requests
+json
+cProfile
+pstats
+time
 pytz
 brotli
+subprocess
+socket
+webbrowser
+asyncio
 aiohttp
 aiofiles
 httpx
