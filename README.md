@@ -49,12 +49,12 @@ Untuk menginstal dan menjalankan `tokopedia_bot_v1.0`, ikuti langkah-langkah ber
   python -m venv env
   ```
   
-  ### Linux/macOS:
+  ##### Linux/macOS:
   
   ```bash
   source env/bin/activate
   ```
-  ### Windows:
+  ##### Windows:
   
   ```bash
   env\Scripts\activate
