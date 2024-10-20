@@ -1,0 +1,352 @@
+[
+  {
+    "name": "_UUID_NONLOGIN_",
+    "value": "4e9b1a9724808b7cc18d57ccf06199f0",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 3187209600,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_UUID_NONLOGIN_.sig",
+    "value": "6MlSREZm0U2fBbrmdF8DHyLiM2Q",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 3187209600,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1855058508.1728578793",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1736354793,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "FPF",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 2044148392,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "DID",
+    "value": "5b98e7f7461555560aab1f7e735f97ddb19239c4b9b475025b93f5a0a1ecde9a82e820adea18d91931a23320f7e1a564",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 2044148392,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_tt_enable_cookie",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1762274881,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_ttp",
+    "value": "NvXWdjOzUi7psbhxQFn0JTeFt5Z",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1762274881,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_CASE_",
+    "value": "722b68406d2b332b3b3b3e3c3838313a302b252b6a406d2b33383d38252b6d406d2b33383c3a39252b655c796d2b332b3b393b3d2438392438395d3b3a333d3e333c3022393e3339392b252b65687d2b332b243f273a3b303e3c39393b3b3c393c3e313e2b252b656b652b332b5b7c646861296f6c7b6d602b252b6566676e2b332b38393f273a303c3d3c3130383d3a3a303c3d2b252b794a662b332b3d3b3a31382b252b7a406d2b3338383c3a393c3e3a252b7a5d70796c2b332b66666a2b252b7e406d2b3339252b7e617a2b332b52542b252b7e617a7a2b332b52542b74",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 3187296000,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_UUID_CAS_",
+    "value": "547f085b-206a-4c70-a491-168ff2465f13",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 3187296000,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "dt_intl",
+    "value": "JT_9HDB4vm-fhdp5rmw7kxTXXxuSyTQK2_0xMpqr0NGH1c",
+    "domain": "www.tokopedia.com",
+    "path": "/",
+    "expires": 2043938888,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "bm_mi",
+    "value": "17B462C12B09EC8F60BD120DF3626E26~YAAQrrjbF4uq9nuSAQAAqPR2gBntaQSjGGtXkqYQHaISsYchtcJhCIVgGHOitcjyp4Z/00k4uilE7c9QYY4dGFBs0AnYwHYJDQkA20Dpf1fDP2nU5QFa0ltVsqrko4QRgjildBG7BjiN7Yt10NkK64MP9RWPoOluBumqmKgHJJgjBvQGwCBD/Wj5yzhQp2889gE9q0C6Ke2Z8QbJyn8HSH5QN/OUWBOpbmBrqTA62Ny8y3IdmoP+8qXRhw/vkao7t7MvuEoPULazZCJzfrBirajzKL4utGGw+ArZ1pUjRN8fwQG1Yf2NyFMlmRyN73aL//ZisvrEUNDTvjrd~1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1728739244,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "webauthn-session",
+    "value": "cb4a3e91-468f-4af5-b053-0e951dba6625",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1731368453,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "data2fa",
+    "value": "%7B%22v%22%3A%7B%22code%22%3A0%2C%22can_intrp%22%3Atrue%2C%22exp%22%3A1729424584996%2C%22showSkip%22%3Atrue%7D%2C%22e%22%3A1729424584996%2C%22b%22%3A2%7D",
+    "domain": "www.tokopedia.com",
+    "path": "/",
+    "expires": 1729424584,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_gat_gtag_UA_9801603_6",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729332191,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "AMP_TOKEN",
+    "value": "%24NOT_FOUND",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729335734,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_dc_gtm_UA-9801603-6",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729332194,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_gat_UA-9801603-6",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729332205,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "uide",
+    "value": "5nX67BFOgk8yAC0DpCy5LovNMuvLtWi4X9Uvs4NrPRrYKNrELg==",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "uidh",
+    "value": "M82rZ/zar6Faz1BM2KpkrEeGjWZ9z6MNDPA5Q4PHXsg=",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_dc_gtm_UA-126956641-6",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729334425,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "DID_JS",
+    "value": "NWI5OGU3Zjc0NjE1NTU1NjBhYWIxZjdlNzM1Zjk3ZGRiMTkyMzljNGI5YjQ3NTAyNWI5M2Y1YTBhMWVjZGU5YTgyZTgyMGFkZWExOGQ5MTkzMWEyMzMyMGY3ZTFhNTY047DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 2044694366,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "l",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1737110366,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "aus",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1737110366,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_SID_Tokopedia_",
+    "value": "IQGdkbnDsNU2zfLtgw9TKtLGDX1H7frIV308iOLh9OeBEakFNyV8eUzJOv2bxlw__m3erVtCIsLwhblOxAdWlNZPpAJzoHpvMM8iy8h86P4wJkgipjZjIv2hGp78wANc",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1737110366,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "tuid",
+    "value": "246116973",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1737110366,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "gec_id",
+    "value": "1057064350025531072",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1737110366,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "bm_sz",
+    "value": "11EEEAA920912BD053CA75507265AD06~YAAQSOnOFzVkZaCSAQAAeE1cpBn27rSTKdoqbsICiFOWP3c3ZHO2E0b83gon+lemKjkTYHbI3vV+vXiqy1GO8hfLoCUhpzUZCPNm0GBPaayplA4C1CEPrLCzjijxguASdthXBjD2n7pUXEFXu/l0yCsgwV/XGiYpkUe+l2l0udn60iFN260VS9ht+7vJetdNoD9LDeJ3CpDa3dUcGi0B5hoBVva3KvCzJ8iI5xNe0daUhs3HyVR/y5745kujeJjRJz5aXChe0z9VmC/Mr946kwSEcnf1JxBaQNWeTSQrcqOGNvYVJs24MuzuyBMothydHflTPC0WZPUbnDqzsKI5JkgBhwPBpQJfqhJE0C55MANUtqcanyilsxWShiWK3wXZwroUDD5456ikPTAqqwyza9gf7JfdWhc+s2F/6Q1w06/RNAIOuMib~4535351~4339777",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729346526,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "ISID",
+    "value": "%7B%22www.tokopedia.com%22%3A%22d3d3LnRva29wZWRpYS5jb20%3D.8ac33f13ed01b4f37a0b143a7bc1d451.1728578792705.1728578792705.1729334366243.244%22%7D",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1760870366,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "dataaclr",
+    "value": "%7B%22v%22%3A%7B%22can_show%22%3Afalse%2C%22exp%22%3A1729770184998%7D%2C%22e%22%3A1729770184998%2C%22b%22%3A2%7D",
+    "domain": "www.tokopedia.com",
+    "path": "/",
+    "expires": 1729770184,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.1069875275.1729165384",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729420767,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_dc_gtm_UA-9801603-1",
+    "value": "1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729334427,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_ga_70947XW48P",
+    "value": "GS1.1.1729334367.19.0.1729334367.60.0.0",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1792406367,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.518895214.1728578793",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1792406367,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_abck",
+    "value": "55E5B2CFA888D4A859DFD428A75A62BD~-1~YAAQSOnOF6pkZaCSAQAAKVZcpAy/tWoegsBxTkTGgcSg9BPAB8H4xswZiPL0m6K+tSp7A7jrcANcn5YDAMQY+WWNa7EJ5HOHHRgpQM7UjcLw/evUlaK12WLD+w4ooE/YUDm78k7pscCj0fRUAn03irmadmUakbSFF3BbUTdWiGfrswvVy+HZMZ65QJYS+JT6KDxbIS3Okymls2R/hNv+xrUeXeUdKBdRhdq768BTEqWMz+PNr6I1sxyrli1lktXMDhtAQ051Uw0xfAmHhXnfCx8aeHIJhMX/APIMguPAkMyIWwAr0pWguZnNdGc2eiMPMjiTRm9zJxZ/DIxXlsyuqdO/SOvXxL7xQXqQKt1XUjaG0Yh2w+Wd8x8B9APuNPPo2VZ5m3Hp7wb1mh7ctPVMNtY5t3q4q3s43FSPQ/InuU0934XhQr3YZk1IooWWuEP0CzC0wTaKl8iInUsZzf9PUbpXyqL4swoDYYySIhMI6V93Jl3z5Db/10MOuovwdXGHI1z/V7Swhhn72GUyUUGfOnpYmi783365Pz6MvVcA+Qjw2nFXg6D+h3hlq0R1LHcaMFYF8Dx6u6epzPscfsUnfsjqzFRJ2wvRvXtYUSAuAO5mDuwoEovIyQEXgmidEn6Lfql8KXQbrvTwMeU9vupEhrKiwLiE9ooJKhPrMREpbwbRAzS0JvYTVHGVAEOWtJrbu8NSlPi55dsoW3HOvL4RELSNZMLmfoqrwPcqWImCHIluFyUhE52LzGd7WExR1p2AAyQ4of7TZgh51vhzSW8TlvoZ9V6EXXY4tsJyztjmYUet/lwk+GEjXqB8ZNJEJ1MwoDu5/i7Lj2C3Ylol7oIOq8N7EmhrfsU4H9GgVCg=~-1~||0||~-1",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1760870367,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "ak_bmsc",
+    "value": "F92C5F8A120EDC20132BB4F62E4B6EE0~000000000000000000000000000000~YAAQSOnOF7BkZaCSAQAAqFZcpBli2g0x4juck1bouc1wIbx04UtBGwohl/vJDXzZvJclaH70r8vJG8dfldc6Yu82xvmmnODdu862AYtbTfBDLhE9NuhkdFS9y7Nh5B0A1lY73dNV+ogi7DAs5JClCOhPdhWdXAuK45hUAtCLd1mH8kAyQ1R8hhzgKzmk4BdtBYVBJrIwEHJ9NyArL4vmGiFTXNFdXAJM8EZPrDLB7tmWKmfwDMv3N3FNaM4BGlYow1ya2ehEhmZfKzV5Boo5akl0RRLfK4kV4h+PNHa2CS956xGj50/VKj/sR9vXLhc+MP09JPwJeEqKVCf/Lo78o7214Jwr+lT3ei0ofTJosGv1WgHavIPg4my+54dmBHyeMSGgrXB56MuLPdktYpAIFYRUKhrR5l4DXSZmnstBhn5up61X7r0C6q7qVjfQEf2x/Y1Lb/rOr9U28EtlEg3BiXORic+3M1yaB94tCBFFYm0K5h0fIRanebTdaMmOVYaH4+W94w+RoSEAdwGI829nfoyV2MB4Eq8iFg==",
+    "domain": ".tokopedia.com",
+    "path": "/",
+    "expires": 1729339325,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  }
+]

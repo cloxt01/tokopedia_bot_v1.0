@@ -3,9 +3,31 @@ import re
 import json
 import time
 import sys
+import os
 from datetime import datetime, timezone, timedelta
 
-
+def pilih_user_data_dir(base_dir="/home/ferdi_cloxt00/Profiles"):
+    folders = [f for f in os.listdir(base_dir) if os.path.isdir(os.path.join(base_dir, f))]
+    if not folders:
+        print("Tidak ada folder yang ditemukan di direktori.")
+        return None
+    print("Profiles List :")
+    for idx, folder in enumerate(folders):
+        print(f"{idx + 1}. {folder}")
+    while True:
+        try:
+            choice = int(input("\nPilih nomor folder yang akan digunakan (masukkan nomor): ")) - 1
+            if 0 <= choice < len(folders):
+                selected_folder = folders[choice]
+                break
+            else:
+                print("Nomor yang dipilih tidak valid. Silakan pilih lagi.")
+        except ValueError:
+            print("Input harus berupa angka. Silakan coba lagi.")
+    user_data_dir = os.path.join(base_dir, selected_folder)
+    print(f"\nFolder yang dipilih: {selected_folder}")
+    print(f"Path untuk user_data_dir: {user_data_dir}")
+    return user_data_dir
 def format_url(url):
     try:
         # Menggunakan re.search untuk menemukan pola yang cocok
@@ -31,15 +53,11 @@ def times():
     # Menampilkan waktu dalam format yang diinginkan
     return gmt_plus_7_time.strftime('%Y-%m-%d %H:%M:%S')
 
-
-
-
 def main():
-    with open('address/AddressProfile.json', 'r') as file:
+    user_data_dir = pilih_user_data_dir()
+    with open(f'{user_data_dir}/AddressProfile.json', 'r') as file:
         address_data = file.read()
         address = json.loads(address_data)
-
-
     address_id = str(address['address_id'])
     district_id = address['district_id']
     city_id = str(address['city_id'])
@@ -51,9 +69,8 @@ def main():
 
     url = input("Masukan URL Produk: ")
     try:
-        with open('cookie/cookie.txt', 'r') as cookie:
+        with open(f'{user_data_dir}/cookie.txt', 'r') as cookie:
             cookies = cookie.read()
-        #url = input("Masukan URL produk: ")
         url_content = format_url(url)
         product_key = url_content['product_key']
         shop_domain = url_content['shop_domain']
@@ -139,7 +156,7 @@ def main():
                             "warehouse_id": warehouse_id,
                             "__typename": typename
                             }
-                    with open('cart/cart_details.json', 'w') as cart:
+                    with open(f'{user_data_dir}/cart_details.json', 'w') as cart:
                         json.dump(cart_details, cart, indent=2)
                     status = response_json[0]['data']['add_to_cart_occ_multi']['data']['message'][0]  # Menggunakan json.dump untuk menulis ke file
                     print(f"[{times()}] {status}")

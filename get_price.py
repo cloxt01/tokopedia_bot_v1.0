@@ -1,5 +1,6 @@
 import asyncio
 import aiohttp
+import brotli
 import aiofiles
 import json
 import random
@@ -11,13 +12,30 @@ import socket
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 
-
+class TextColors:
+    HEADER = '\033[95m'    # Ungu terang
+    OKBLUE = '\033[94m'    # Biru
+    OKCYAN = '\033[96m'    # Cyan
+    OKGREEN = '\033[92m'   # Hijau
+    WARNING = '\033[93m'   # Kuning
+    FAIL = '\033[91m'      # Merah
+    ENDC = '\033[0m'       # Reset warna
+    BOLD = '\033[1m'       # Teks tebal
+    RESET = '\033[0m'
+    UNDERLINE = '\033[4m'  # Garis bawah
 async def send_data(writer, data):
-    # Mengonversi data ke format JSON dan mengirimnya
-    json_data = json.dumps(data).encode('utf-8')
-    writer.write(json_data)
-    await writer.drain()
-
+    try:
+        # Jika data berupa bytes, kirim langsung
+        if isinstance(data, bytes):
+            writer.write(data)
+        else:
+            # Jika data bukan bytes, kita konversi ke JSON
+            json_data = json.dumps(data).encode('utf-8')
+            writer.write(json_data)
+        
+        await writer.drain()  # Pastikan semua data sudah dikirim
+    except Exception as e:
+        print(f"[{await times()}] ERROR > Gagal mengirim data: {e}")
 async def times():
     utc_now = datetime.now(timezone.utc)
 
@@ -27,41 +45,28 @@ async def times():
     # Menampilkan waktu dalam format yang diinginkan
     formatted_time = gmt_plus_7_time.strftime('%Y-%m-%d %H:%M:%S.%f')[:-2]
     return formatted_time
-
 async def wait_for_signal(stop_time_str, target_time_str, lock):
     jakarta_tz = ZoneInfo("Asia/Jakarta")
     start_time = datetime.now(jakarta_tz)
     stop_time = datetime.strptime(stop_time_str, "%Y-%m-%d %H:%M:%S.%f").replace(tzinfo=jakarta_tz)
     target_time = datetime.strptime(target_time_str, "%Y-%m-%d %H:%M:%S.%f").replace(tzinfo=jakarta_tz)
 
-    # Perf_counter_ns for precise timing in nanoseconds
     start_perf_ns = time.perf_counter_ns()
 
     while True:
         # Calculate elapsed time in nanoseconds
         elapsed_time_ns = time.perf_counter_ns() - start_perf_ns
-        elapsed_time_td = timedelta(microseconds=elapsed_time_ns / 1000)  # Convert to timedelta
-
-        # Calculate the current time using start_time + elapsed nanoseconds
+        elapsed_time_td = timedelta(microseconds=elapsed_time_ns / 1000)
         now_time = start_time + elapsed_time_td
-
-        # Display elapsed time in seconds for easier reading
         elapsed_time_s = elapsed_time_ns / 1_000_000_000
-
-        # Output for monitoring the progress
         async with lock:
             print(f"\rStart: {start_time.strftime('%H:%M:%S.%f')[:-3]} | Now: {now_time.strftime('%H:%M:%S.%f')[:-3]} | Stop: {stop_time.strftime('%H:%M:%S.%f')[:-3]} | Elapsed: {elapsed_time_s:.3f}s | Target: {target_time.strftime('%H:%M:%S.%f')[:-3]}", end='')
-
-        # Compare nanosecond-precision now_time with stop_time
         if now_time >= stop_time:
             async with lock:
                 print()  # Move to new line
-                print("MULAI!")
             break
 
-        await asyncio.sleep(0.01)
-
-        
+        await asyncio.sleep(0.01)        
 def fquantity(quantity,min):
     if min != quantity:
         return min
@@ -74,21 +79,18 @@ def fspids(shop_shipments):
             ship_ids.append(product['ship_prod_id'])
     spids = ','.join(map(str, ship_ids))
     return spids
-async def request_price(session, writer, start_price, url, payload, headers, stop_event,stop_signal,stop,target,lock):
+async def request_price(session, writer, start_price, url, payload, headers, stop_event,stop_signal,stop,target,lock,tasks):
+    global j, k
     try:
         send_time = await times()
         async with session.post(url, json=payload, headers=headers) as response:
             recv_time = await times()
-            #response.raise_for_status()
             response_json = await response.json()
 
-            
-
-            # Ambil harga saat ini
             processing_time = response.headers.get('Gql-Request-Processing-Time', 'N/A')
-            price_now = response_json[0]['data']['get_occ_multi']['data']['total_product_price']
-            sprice_now = random.randint(10000,100000)
             
+            sprice_now = random.randint(10000,100000)
+            price_now = response_json[0]['data']['get_occ_multi']['data']['total_product_price']
             payment_fee_detail = (
                 response_json[0]
                 .get('data', {})
@@ -146,9 +148,7 @@ async def request_price(session, writer, start_price, url, payload, headers, sto
                 "spids": spids,
                 "weight": weight,
                 "quantity": quantity
-            }
-
-            
+            } 
             respon = {
                 "url": url,
                 "id":id,
@@ -161,35 +161,60 @@ async def request_price(session, writer, start_price, url, payload, headers, sto
                     "processing_time": f"{processing_time}ms"
                     }
                 }
-            #print(json.dumps(respon,indent=2))\
-            # and ut_time == target
-            if (sprice_now != start_price) and not stop_event.is_set():
+            
+            #if (sprice_now != start_price) and not stop_event.is_set():
+            if j == 12 and k == 0:
                 stop_event.set()
-                await send_data(writer,data_price)
-                print(f" TRUE  > {id} > {send_time} > {ut_time} == {target} > {price_now}",end='')
-                
-                
+                json_data = json.dumps(data_price).encode('utf-8')
+                compressed_data = brotli.compress(json_data)
+                print(f"[{await times()}] Buffer Brotli (bytes):", compressed_data)
+                print(f"[{await times()}] Buffer Brotli (LenBytes):", len(compressed_data))
+                await send_data(writer,compressed_data)
+                print(f"{j:03} > TRUE  > {id} > {send_time} > {ut_time} == {target} > {price_now}",end='\n')
+                for task in tasks:
+                    task.cancel()
+                raise asyncio.CancelledError
             elif (price_now == start_price and ut_time != target) and not stop_event.is_set():
-                print(f" FALSE > {id} > {send_time} > {ut_time} != {target} > {price_now}",end='')
-            print()
-            return respon
-            
-            
-            
+                print(f"{j:03} > FALSE > {id} > {send_time} > {ut_time} != {target} > {price_now}",end='\n')
+            j+=1
+    except (IndexError, KeyError):
+        print(f"{j:03} > NONE > {id} > {send_time}",end='\n')
+        j+=1
+        return  
     except Exception as e:
         print(f"[{await times()}] Terjadi kesalahan saat membaca info keranjang")
         print(f"[{await times()}] Details :{e}")
-        traceback.print_exc()
-
-async def run_tasks_with_timeout(session,writer, start_price, url, payload, headers, stop_event,stop_signal,stop,target,lock):
+        detail = input(f"[{times()}] ERROR > Tampilkan lebih detail (y/N) : ")
+        if detail == 'y' or detail == 'Y':
+            traceback.print_exc()
+        return
+async def run_tasks_with_timeout(session, writer, start_price, url, payload, headers, stop_event, stop_signal, stop, target, lock):
     await wait_for_signal(stop, target, lock)
-    tasks = [request_price(session,writer, start_price, url, payload, headers, stop_event,stop_signal,stop,target,lock) for _ in range(50)]  #
-    try:
-        results = await asyncio.wait_for(asyncio.gather(*tasks), timeout=8)
-        return results
-    except asyncio.TimeoutError:
-        print(f"\n[{await times()}] Tasks timed out!")
-        return None
+    global k
+    k = 0
+    while True:
+        global j
+        j = 0
+        tasks = []
+        tasks_len = 100
+        for _ in range(tasks_len):
+            task = asyncio.create_task(request_price(session, writer, start_price, url, payload, headers, stop_event, stop_signal, stop, target, lock, tasks))
+            tasks.append(task)or _ in range(tasks_len) 
+        try:
+            results = await asyncio.wait_for(asyncio.gather(*tasks), timeout=6)
+        except asyncio.CancelledError as e:
+            print(f"\n[{await times()}] Tugas dihentikan.")
+            #print(f"[{await times()}] Details : {type(e)}")
+            break
+        except asyncio.TimeoutError as e:
+            print(f"\n[{await times()}] Waktu habis")
+            #print(f"[{await times()}] Details : {type(e)}")
+            for task in tasks:
+                task.cancel()
+            await asyncio.gather(*tasks, return_exceptions=True)
+            break
+        k += 1
+
 async def main():
     try:
         server_address = ('localhost', 8811)
@@ -237,8 +262,11 @@ async def main():
             async with session.post(url, json=payload, headers=headers) as response:
                 response.raise_for_status()
                 response_json = await response.json()
+                product_name = response_json[0]['data']['get_occ_multi']['data']['group_shop_occ'][0]['cart_details'][0]['products'][0]['product_name']
                 start_price = response_json[0]['data']['get_occ_multi']['data']['total_product_price']
-                print(f"Harga saat ini : {start_price}")
+                print(f"[{await times()}] Product Name > {product_name}")
+                print(f"[{await times()}] Price        > {start_price}")
+                
                 if start_price == 0:
                     print(f"[{await times()}] Keranjang kosong nih, Tambahkan produk dulu ya")
                     return
@@ -256,11 +284,25 @@ async def main():
                 if target_mnt == 60:
                     hour += 1
                     target_mnt = 0
-                #target = f"{date} {hour:02}:{target_mnt:02}:00.000"
-                #stop = f"{date} {hour:02}:{mnt:02}:56.230"
-                target = "2024-10-15 17:00:00.000"
-                stop   = "2024-10-15 16:59:56.000"
                 
+                DT = True
+                print(f"[{await times()}] WARNING > DynamicTime > {DT}")
+                if DT is True:
+                    target = f"{date} {hour:02}:{target_mnt:02}:00.000"
+                    stop = f"{date} {hour:02}:{mnt:02}:55.000"
+                    next = input(f"[{await times()}] WARNING > Lanjutkan ([y/n]) : ")
+                    if next == 'Y' or next == 'y':
+                        print(f"[{await times()}] {TextColors.WARNING}WARNING{TextColors.RESET} > Pastikan Waktunya sesuai yaa")
+                    elif next != 'N' or next != 'n':
+                        return
+                    else:
+                        print(f"[{await times()}] ERROR > Input gak sesuai nih")
+                else:
+                    target = "2024-10-16 00:00:00.000"
+                    stop   = "2024-10-15 23:59:55.000"
+                
+                print(f"[{await times()}] INFO > TargetTime : {target}")
+                print(f"[{await times()}] INFO > StopTime   : {stop}")
                 await run_tasks_with_timeout(session,writer, start_price, url, payload, headers, stop_event,stop_signal,stop,target,lock)
     except OSError as e:
         print(f"[{await times()}] Jalankan 'main.py' terlebih dahulu yaa")
