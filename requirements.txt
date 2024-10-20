@@ -1,8 +1,7 @@
-
 requests
 pytz
+brotli
 aiohttp
 aiofiles
 httpx
 playwright
-tzdata
