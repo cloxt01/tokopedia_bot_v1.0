@@ -90,8 +90,4 @@ Jika kamu kesulitan untuk menemukan profilenya, ikuti langkah-langkah berikut :
 6. **Salin Folder** : Lalu, Salin Folder dan Tempel ke Folder `Profiles` program ini.
 
 ## Output
-![Expected Results](https://drive.google.com/uc?export=view&id=1E8tTBcPxPaWs0FRbQMT66qjdFa414e-b)
-
-## Lisensi
-
-Aplikasi ini dilisensikan di bawah [MIT License](LICENSE).
+![Expected Results]
