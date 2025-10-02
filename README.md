@@ -93,4 +93,4 @@ Jika kamu kesulitan untuk menemukan profilenya, ikuti langkah-langkah berikut :
 ![Expected Results]
 
 ## Demo
-![Demo](demo.gif)
+![Demo](./demo.gif)
