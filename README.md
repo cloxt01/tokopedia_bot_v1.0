@@ -87,10 +87,10 @@ Jika kamu kesulitan untuk menemukan profilenya, ikuti langkah-langkah berikut :
 
 5. **Buka Folder Profile (Root)** : Selanjutnya, buka folder profile dengan cara mengklik `Buka Folder` yang nantinya kamu akan dialihkan ke letak lokasi folder berada.
 
-## Demo
-![Demo](demo.gif)
-
-7. **Salin Folder** : Lalu, Salin Folder dan Tempel ke Folder `Profiles` program ini.
+6. **Salin Folder** : Lalu, Salin Folder dan Tempel ke Folder `Profiles` program ini.
 
 ## Output
 ![Expected Results]
+
+## Demo
+![Demo](demo.gif)
